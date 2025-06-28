@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced QR Code Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-qrcode"></i>
+            <h1>QR Code Generator</h1>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="qrText" placeholder="Enter URL or text..." autocomplete="off">
+            <button id="generateBtn">
+                <i class="fas fa-qrcode"></i> Generate
+            </button>
+        </div>
+        
+        <div class="qr-container" id="imgBox">
+            <div class="placeholder">
+                <i class="fas fa-qrcode"></i>
+                <p>Your QR code will appear here</p>
+            </div>
+            <img id="qrImage" style="display: none;">
+        </div>
+        
+        <div class="actions">
+            <button id="downloadBtn" disabled>
+                <i class="fas fa-download"></i> Download
+            </button>
+            <button id="clearBtn">
+                <i class="fas fa-trash-alt"></i> Clear
+            </button>
+        </div>
+        
+        <div class="error-msg" id="errorMsg"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
